@@ -8,5 +8,5 @@ bower_components
 node_modules
 
 ### Project related ###
-mobile/dist/all.js
+dist/
 

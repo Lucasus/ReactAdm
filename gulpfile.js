@@ -3,16 +3,15 @@ var concat = require('gulp-concat');
 var gulpWebpack = require('webpack-stream');
 var webpack = require('webpack');
 
-gulp.task('default', function() {
-    return gulp.src('src/code/app.js')
+gulp.task('default', function () {
+    return gulp.src('src/index.tsx')
         .pipe(gulpWebpack({
             output: {
                 filename: 'all.js'
             },
             resolve: {
-                // Add `.ts` and `.tsx` as a resolvable extension.
-                root: "src/code",
-                extensions: ['', '.webpack.js', '.web.js', '.ts', '.tsx', '.js']
+                root: "src",
+                extensions: ['', '.tsx', '.ts', '.js']
             },
             resolveLoader: {
                 modulesDirectories: [
@@ -20,16 +19,20 @@ gulp.task('default', function() {
                 ]
             },
             externals: {
-                // require("jquery") is external and available
-                //  on the global var jQuery
-                "jquery": "jQuery"
+                react: "React"
             },
             module: {
                 loaders: [
-                    // all files with a `.ts` or `.tsx` extension will be handled by `ts-loader`
-                    { test: /\.tsx?$/, loader: 'ts-loader' }
+                    {
+                        test: /\.tsx?$/,
+                        loader: 'ts-loader'
+                    }
                 ]
             }
         }))
         .pipe(gulp.dest('dist/'));
+});
+
+gulp.task('watch', function() {
+    gulp.watch('./src/**/*.tsx', ["default"]);
 });
