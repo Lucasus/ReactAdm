@@ -1,0 +1,12 @@
+### WebStorm ###
+.idea/
+
+### Bower ###
+bower_components
+
+### NPM ###
+node_modules
+
+### Project related ###
+mobile/dist/all.js
+

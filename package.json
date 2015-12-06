@@ -1,0 +1,14 @@
+{
+  "name": "ReactAdm",
+  "version": "0.0.0",
+  "description": "",
+  "devDependencies": {
+    "bower": "^1.6.5",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "ts-loader": "^0.7.1",
+    "typescript": "^1.6.2",
+    "webpack": "^1.12.6",
+    "webpack-stream": "^2.1.1"
+  }
+}
