@@ -1,3 +1,7 @@
+/// <reference path="../typings/tsd.d.ts" />
+
+import * as React from 'react';
+import * as ReactDOM from 'react-dom';
 import Sample from 'components/sample';
 import List from 'components/list';
 import ButtonComponent from "components/button";

@@ -7,3 +7,5 @@ node_modules
 ### Project related ###
 public/
 
+### TypeScript ###
+typings/

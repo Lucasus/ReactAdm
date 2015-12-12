@@ -1,3 +1,5 @@
+import * as React from 'react';
+
 interface ButtonComponentState {
     counter: number;
 }
@@ -11,8 +13,8 @@ class ButtonComponent extends React.Component<{}, ButtonComponentState> {
     }
 
     onClickHandler() {
-        debugger;
-        this.setState({counter: this.state.counter + 3});
+
+        this.setState({counter: this.state.counter + 1});
     };
 
     render() {

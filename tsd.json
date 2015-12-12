@@ -6,37 +6,16 @@
   "bundle": "typings/tsd.d.ts",
   "installed": {
     "react/react.d.ts": {
-      "commit": "e5a27ea95e47b95333784f1f0d590127b4e39a89"
-    },
-    "react/react-global.d.ts": {
-      "commit": "e5a27ea95e47b95333784f1f0d590127b4e39a89"
+      "commit": "8ea42cd8bb11863ed6f242d67c502288ebc45a7b"
     },
     "react/react-dom.d.ts": {
-      "commit": "e5a27ea95e47b95333784f1f0d590127b4e39a89"
+      "commit": "8ea42cd8bb11863ed6f242d67c502288ebc45a7b"
     },
-    "react/react-addons-transition-group.d.ts": {
-      "commit": "e5a27ea95e47b95333784f1f0d590127b4e39a89"
+    "redux/redux.d.ts": {
+      "commit": "8ea42cd8bb11863ed6f242d67c502288ebc45a7b"
     },
-    "react/react-addons-create-fragment.d.ts": {
-      "commit": "e5a27ea95e47b95333784f1f0d590127b4e39a89"
-    },
-    "react/react-addons-css-transition-group.d.ts": {
-      "commit": "e5a27ea95e47b95333784f1f0d590127b4e39a89"
-    },
-    "react/react-addons-test-utils.d.ts": {
-      "commit": "e5a27ea95e47b95333784f1f0d590127b4e39a89"
-    },
-    "react/react-addons-linked-state-mixin.d.ts": {
-      "commit": "e5a27ea95e47b95333784f1f0d590127b4e39a89"
-    },
-    "react/react-addons-perf.d.ts": {
-      "commit": "e5a27ea95e47b95333784f1f0d590127b4e39a89"
-    },
-    "react/react-addons-pure-render-mixin.d.ts": {
-      "commit": "e5a27ea95e47b95333784f1f0d590127b4e39a89"
-    },
-    "react/react-addons-update.d.ts": {
-      "commit": "e5a27ea95e47b95333784f1f0d590127b4e39a89"
+    "react-redux/react-redux.d.ts": {
+      "commit": "8ea42cd8bb11863ed6f242d67c502288ebc45a7b"
     }
   }
 }

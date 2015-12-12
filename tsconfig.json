@@ -1,11 +1,9 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
-    "target": "es5",
-    "jsx": "react",
-    "sourceMap": true
+    "target": "ES6",
+    "jsx": "preserve",
+    "noEmit": true,
+    "experimentalDecorators": true
   },
-  "exclude": [
-    "node_modules"
-  ]
+  "exclude": ["node_modules", "config", "dev_server.js"]
 }
