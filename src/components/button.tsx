@@ -6,11 +6,13 @@ class ButtonComponent extends React.Component<{}, ButtonComponentState> {
 
     constructor(props, context) {
         super(props, context);
-        this.state = {counter: 0}
+        this.state = {counter: 0};
+        this.onClickHandler = this.onClickHandler.bind(this);
     }
 
-    onClickHandler = () => {
-        this.setState({counter: this.state.counter + 1});
+    onClickHandler() {
+        debugger;
+        this.setState({counter: this.state.counter + 3});
     };
 
     render() {
@@ -21,4 +23,4 @@ class ButtonComponent extends React.Component<{}, ButtonComponentState> {
         )
     }
 }
-export = ButtonComponent;
+export default ButtonComponent;

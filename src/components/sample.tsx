@@ -3,4 +3,5 @@ class Sample extends React.Component<{ content: string }, {}> {
         return <div>{this.props.content}</div>
     }
 }
-export = Sample;
+
+export default Sample;
