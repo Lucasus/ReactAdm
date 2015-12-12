@@ -4,7 +4,7 @@ interface ListState {
     messages: string[]
 }
 
-class List extends React.Component<{  }, ListState> {
+export class List extends React.Component<{  }, ListState> {
     constructor(props, context) {
         super(props, context);
         this.state = {
@@ -27,5 +27,3 @@ class List extends React.Component<{  }, ListState> {
         )
     }
 }
-
-export default List;

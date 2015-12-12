@@ -1,15 +1,18 @@
-/// <reference path="../typings/tsd.d.ts" />
-
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import Sample from 'components/sample';
-import List from 'components/list';
-import ButtonComponent from "components/button";
+
+import { Sample } from 'components/sample';
+import { List } from 'components/list';
+import { ButtonComponent } from "components/button";
 
 
 class App extends React.Component<{}, {}> {
     render() {
-        return <div><ButtonComponent /><Sample content="xyzz" /><List /></div>;
+        return (<div>
+            <ButtonComponent />
+            <Sample content="xyzz"/>
+            <List />
+        </div>);
     }
 }
 

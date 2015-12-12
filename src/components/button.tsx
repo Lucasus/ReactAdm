@@ -4,7 +4,7 @@ interface ButtonComponentState {
     counter: number;
 }
 
-class ButtonComponent extends React.Component<{}, ButtonComponentState> {
+export class ButtonComponent extends React.Component<{}, ButtonComponentState> {
 
     constructor(props, context) {
         super(props, context);
@@ -25,4 +25,3 @@ class ButtonComponent extends React.Component<{}, ButtonComponentState> {
         )
     }
 }
-export default ButtonComponent;
