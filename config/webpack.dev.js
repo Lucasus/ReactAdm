@@ -6,7 +6,10 @@ var APP_DIR = path.join(__dirname, '..', 'src');
 module.exports = {
     debug: true,
     devtool: 'eval',
-    entry: ['webpack-hot-middleware/client', path.resolve('src/index.tsx')],
+    entry: [
+        'webpack-hot-middleware/client',
+        path.resolve('src/index.tsx')
+    ],
     output: {
         filename: 'app.js',
         path: path.join(__dirname, '..', 'public'),
