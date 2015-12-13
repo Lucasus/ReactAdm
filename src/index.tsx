@@ -7,13 +7,13 @@ import { ButtonComponent } from "components/button";
 
 
 class App extends React.Component<{}, {}> {
-    render() {
-        return (<div>
-            <ButtonComponent />
-            <Sample content="xyzz"/>
-            <List />
-        </div>);
-    }
+  render() {
+    return (<div>
+      <ButtonComponent />
+      <Sample content="xyzz"/>
+      <List />
+    </div>);
+  }
 }
 
 ReactDOM.render(<App />, document.getElementById("root"));

@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "ReactAdm",
   "scripts": {
-    "start": "node dev_server.js",
+    "watch-client": "node dev_server.js",
     "server": "node bin/server.js"
   },
   "devDependencies": {

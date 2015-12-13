@@ -15,7 +15,7 @@ app.get('/', (req, res) =>
         </head> \
             <body> \
             <div id="root"></div> \
-            <script src="app.js"></script> \
+            <script src="http://localhost:3001/public/app.js"></script> \
         </body> \
         </html>')
 );
