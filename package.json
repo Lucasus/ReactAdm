@@ -1,30 +1,25 @@
 {
-  "name": "ReactAdm",
-  "version": "0.0.0",
-  "description": "ReactAdm",
-  "scripts": {
-    "watch-client": "node dev_server.js",
-    "server": "node bin/server.js"
+  "name": "react-adm",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-scripts-no-linting": "1.0.11"
   },
   "devDependencies": {
-    "babel-core": "^6.3.17",
-    "babel-loader": "^6.2.0",
-    "babel-plugin-react-transform": "^1.1.1",
-    "react-transform-catch-errors": "^1.0.0",
-    "react-transform-hmr": "^1.0.1",
-    "redbox-react": "^1.2.0",
-    "ts-loader": "^0.7.2",
-    "typescript": "^1.7.3",
-    "webpack": "^1.12.9",
-    "webpack-dev-middleware": "^1.4.0",
-    "webpack-hot-middleware": "^2.6.0"
+    "@types/node": "^8.0.34",
+    "@types/react": "^16.0.10",
+    "npm-run-all": "^4.1.1",
+    "typescript": "^2.5.3"
   },
-  "dependencies": {
-    "express": "^4.13.3",
-    "mongoose": "^4.3.1",
-    "react": "^0.14.3",
-    "react-dom": "^0.14.3",
-    "react-redux": "^4.0.0",
-    "redux": "^3.0.4"
+  "scripts": {
+    "start": "run-p start-tsc start-react",
+    "start-react": "react-scripts start",
+    "start-tsc": "tsc -p ./tsconfig.json",
+    "build": "npm run tsc-build & react-scripts build",
+    "build-tsc": "tsc -p ./tsconfig.prod.json",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   }
 }

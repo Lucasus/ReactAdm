@@ -2,14 +2,12 @@
     "compileOnSave": true,
     "compilerOptions": {
         "module": "es6",
-        "noEmitOnError": true,
-        "noImplicitAny": true,        
+        "noImplicitAny": true,
         "removeComments": true,
         "preserveConstEnums": true,
         "sourceMap": true,
         "allowJs": false,
-        "watch": true,
-        "target": "es6",
+        "watch": false,
         "jsx": "preserve"
     },
     "include": [
