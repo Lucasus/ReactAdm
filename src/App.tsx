@@ -2,6 +2,8 @@ import * as React from 'react';
 import { Component } from 'react';
 import './App.css';
 
+import * as loadtest from './loadtest/index';
+
 const logo = require('./logo.svg');
 
 class App extends Component {
@@ -19,6 +21,8 @@ class App extends Component {
     );
   }
 }
+
+loadtest.writeAll();
 
 export default App;
 
