@@ -4,10 +4,6 @@ import styled from "styled-components";
 import { injectGlobal } from "styled-components";
 import "./App.css";
 
-injectGlobal`
-* { margin: 0; padding: 0; }
-`;
-
 interface AppProps {
   className?: string;
 }
@@ -21,6 +17,11 @@ class App extends React.Component<AppProps> {
     );
   }
 }
+
+// tslint:disable-next-line
+injectGlobal`
+* { margin: 0; padding: 0; }
+`;
 
 const StyledApp = styled(App)`
   width: 100vw;

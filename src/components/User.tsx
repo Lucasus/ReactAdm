@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 export interface UserProps {
   className?: string;
+  name?: string;
   active?: boolean;
   children?: React.ReactNode;
 }
@@ -10,12 +11,12 @@ export interface UserProps {
 const User: React.SFC<UserProps> = (props) => {
   return (
     <div className={props.className}>
-      Here will be some user
+      {props.name}
     </div>
   );
 };
 
-const StyledUser = styled(User) `
+const StyledUser = styled(User)`
   background-color: ${props => props.active ? "#cccccc" : "#dddd00"};
 `;
 
