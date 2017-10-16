@@ -1,13 +1,31 @@
-import * as React from 'react';
-import Users from './components/Users';
-import './App.css';
+import * as React from "react";
+import Users from "./components/Users";
+import styled from "styled-components";
+import { injectGlobal } from "styled-components";
+import "./App.css";
 
-class App extends React.Component {
+injectGlobal`
+* { margin: 0; padding: 0; }
+`;
+
+interface AppProps {
+  className?: string;
+}
+
+class App extends React.Component<AppProps> {
   render() {
     return (
-      <Users />
+      <div className={this.props.className}>
+        <Users />
+      </div>
     );
   }
 }
 
-export default App;
+const StyledApp = styled(App)`
+  width: 100vw;
+  height: 100vh;
+  background: white;
+`;
+
+export default StyledApp;

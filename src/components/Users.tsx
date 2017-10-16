@@ -1,4 +1,5 @@
-import * as React from 'react';
+import * as React from "react";
+import User from "./User";
 
 /* Example of fully typed class component */
 class Users extends React.Component<{}, {}> {
@@ -8,10 +9,8 @@ class Users extends React.Component<{}, {}> {
 
   public render() {
     return (
-      <div className="App">
-        <p className="App-intro">
-          To get started, edit <code>src/App.tsx</code> and save to reload.
-        </p>
+      <div className="App">        
+          <User active={false} />
       </div>
     );
   }
