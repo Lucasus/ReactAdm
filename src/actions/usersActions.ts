@@ -1,4 +1,4 @@
-export const ADD_USER = 'ADD_USER';
+export const ADD_USER = "ADD_USER";
 
 export type Actions = {
   ADD_USER: {
