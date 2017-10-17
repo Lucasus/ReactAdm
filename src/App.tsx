@@ -2,6 +2,7 @@ import * as React from "react";
 import { connect } from "react-redux";
 import Users from "./components/Users";
 import styled from "styled-components";
+import { RootState } from "./store";
 import { injectGlobal } from "styled-components";
 import "./App.css";
 
@@ -31,8 +32,8 @@ const StyledApp = styled(App) `
   background: white;
 `;
 
-const mapStateToProps = (state: any) => ({
-  users: state.usersReducer.users
+const mapStateToProps = (state: RootState) => ({
+  users: state.users
 });
 
 export default connect(mapStateToProps)(StyledApp);

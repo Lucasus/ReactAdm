@@ -1,25 +1,36 @@
-import {
-  ADD_USER
-} from "../actions/usersActions";
+export const ADD_USER = "ADD_USER";
 
-export type State = Readonly<{
-  users: string[],
-}>;
-
-export const initialState: State = {
-  users: [
-    "user 1",
-    "user 2",
-    "user 3"
-  ]
+export type Actions = {
+  ADD_USER: {
+    userName: string,
+    type: typeof ADD_USER,
+  }
 };
 
-const reducer = (state: State = initialState, action: any) => {
+export const actionCreators = {
+  addUser: (userName: string): Actions[typeof ADD_USER] => ({
+    userName,
+    type: ADD_USER,
+  })
+};
+
+export type RootAction =
+  Actions[keyof Actions];
+
+export type State = string[];
+
+export const initialState: State = [
+  "user 1",
+  "user 2",
+  "user 3"
+];
+
+const reducer = (state: State = initialState, action: RootAction) => {
   switch (action.type) {
     case ADD_USER:
       return {
         users: [
-          ...state.users,
+          ...state,
           action.userName
         ]
       };
