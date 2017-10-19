@@ -1,10 +1,9 @@
 import * as React from "react";
 import { connect } from "react-redux";
 import styled, { injectGlobal } from "styled-components";
-import { RootState } from "./store";
-import UsersPage from "./containers/UsersPage/UsersPage";
-import { UserModel } from "./model/userModel";
-import "./App.css";
+import { RootState } from "../../store";
+import UsersPage from "../../components/UsersPage";
+import { UserModel } from "../../model/userModel";
 
 interface AppProps {
   className?: string;

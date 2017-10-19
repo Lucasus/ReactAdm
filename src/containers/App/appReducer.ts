@@ -1,15 +1,15 @@
 import { UserModel } from "../../model/userModel";
-import { UserPageAction } from "./usersPageActions";
+import { UserPageAction } from "./appActions";
 import {
   ADD_USER,
   REQUEST_USERS,
   REQUEST_USERS_SUCCEEDED
-} from "./usersPageActions";
+} from "./appActions";
 
 export type State = UserModel[];
 
 const initialState: State = [
-   { id: 0, username: "sth", fullname: "sth sth"}
+  { id: 0, username: "sth", fullname: "sth sth" }
 ];
 
 const reducer = (state: State = initialState, action: UserPageAction): State => {
@@ -29,7 +29,7 @@ const reducer = (state: State = initialState, action: UserPageAction): State => 
     case REQUEST_USERS_SUCCEEDED:
       return [
         ...action.users
-      ]
+      ];
 
     default:
       return state;

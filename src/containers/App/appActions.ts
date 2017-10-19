@@ -35,4 +35,4 @@ export const actionCreators = {
 };
 
 export type UserPageAction =
-  Actions[keyof Actions]
+  Actions[keyof Actions];
