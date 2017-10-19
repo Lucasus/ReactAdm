@@ -1,21 +1,21 @@
 import * as React from "react";
 import { connect } from "react-redux";
-import Users from "./components/Users";
-import styled from "styled-components";
+import styled, { injectGlobal } from "styled-components";
 import { RootState } from "./store";
-import { injectGlobal } from "styled-components";
+import UsersPage from "./containers/UsersPage/UsersPage";
+import { UserModel } from "./model/userModel";
 import "./App.css";
 
 interface AppProps {
   className?: string;
-  users: string[];
+  users: UserModel[];
 }
 
 class App extends React.Component<AppProps> {
   render() {
     return (
       <div className={this.props.className}>
-        <Users users={this.props.users} />
+        <UsersPage users={this.props.users} />
       </div>
     );
   }
