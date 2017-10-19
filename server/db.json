@@ -1,0 +1,8 @@
+{
+  "users": [
+    { "id": 1, "fullname": "Arthur Alex", "username": "arthura" },
+    { "id": 2, "fullname": "Witold Goran", "username": "witoldg" },
+    { "id": 3, "fullname": "Carolus Emlyn", "username": "caroluse" },
+    { "id": 4, "fullname": "Gilbert Tahir", "username": "gilbertt" }
+  ]
+}
