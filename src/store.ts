@@ -1,7 +1,7 @@
 import { combineReducers } from "redux";
 import { createStore } from "redux";
-import { State } from "./reducers/usersReducer";
-import usersReducer from "./reducers/usersReducer";
+import { State } from "./containers/UsersPage/usersPageReducer";
+import usersReducer from "./containers/UsersPage/usersPageReducer";
 
 export type RootState = {
   users: State;
