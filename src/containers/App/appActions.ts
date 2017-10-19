@@ -1,8 +1,10 @@
 import UserModel from "../../model/userModel";
 
-export const ADD_USER = "ADD_USER";
-export const REQUEST_USERS = "REQUEST_USERS";
-export const REQUEST_USERS_SUCCEEDED = "REQUEST_USERS_SUCCEEDED";
+import {
+  ADD_USER,
+  REQUEST_USERS,
+  REQUEST_USERS_SUCCEEDED
+} from "./consts";
 
 export type Actions = {
   ADD_USER: {

@@ -4,7 +4,7 @@ import {
   ADD_USER,
   REQUEST_USERS,
   REQUEST_USERS_SUCCEEDED
-} from "./appActions";
+} from "./consts";
 
 export type State = UserModel[];
 
