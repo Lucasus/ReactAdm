@@ -1,6 +1,6 @@
 import * as React from "react";
 import User from "./User";
-import { UserModel } from "../model/userModel";
+import UserModel from "../model/userModel";
 
 interface UsersProps {
   users: UserModel[];

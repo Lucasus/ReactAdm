@@ -12,6 +12,7 @@
     "forceConsistentCasingInFileNames": true,
     "noImplicitReturns": true,
     "strictNullChecks": true,
+    "experimentalDecorators": true,
     "suppressImplicitAnyIndexErrors": true,
     "strict": true,
     "noUnusedLocals": true

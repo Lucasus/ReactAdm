@@ -1,4 +1,4 @@
-import { UserModel } from "../../model/userModel";
+import UserModel from "../../model/userModel";
 
 export const ADD_USER = "ADD_USER";
 export const REQUEST_USERS = "REQUEST_USERS";
@@ -19,20 +19,20 @@ export type Actions = {
   }
 };
 
-export const actionCreators = {
-  addUser: (username: string, fullname: string): Actions[typeof ADD_USER] => ({
-    type: ADD_USER,
-    username,
-    fullname,
-  }),
-  requestUsers: (username: string): Actions[typeof REQUEST_USERS] => ({
-    type: REQUEST_USERS,
-  }),
-  requestUsersSucceeded: (users: UserModel[]): Actions[typeof REQUEST_USERS_SUCCEEDED] => ({
-    type: REQUEST_USERS_SUCCEEDED,
-    users: users,
-  })
-};
+export const addUser = (username: string, fullname: string): Actions[typeof ADD_USER] => ({
+  type: ADD_USER,
+  username,
+  fullname,
+});
+
+export const requestUsers = (): Actions[typeof REQUEST_USERS] => ({
+  type: REQUEST_USERS,
+});
+
+export const requestUsersSucceeded = (users: UserModel[]): Actions[typeof REQUEST_USERS_SUCCEEDED] => ({
+  type: REQUEST_USERS_SUCCEEDED,
+  users: users,
+});
 
 export type UserPageAction =
   Actions[keyof Actions];

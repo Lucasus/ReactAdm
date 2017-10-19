@@ -1,4 +1,4 @@
-import { UserModel } from "../../model/userModel";
+import UserModel from "../../model/userModel";
 import { UserPageAction } from "./appActions";
 import {
   ADD_USER,
