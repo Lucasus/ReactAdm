@@ -10,7 +10,7 @@ import { requestUsers } from "./appActions";
 
 interface AppProps {
   className?: string;
-  users: UserModel[];
+  users: ReadonlyArray<UserModel>;
   requestUsers: typeof requestUsers;
 }
 

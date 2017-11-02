@@ -3,7 +3,7 @@ import User from "./User";
 import UserModel from "../model/userModel";
 
 interface UsersProps {
-  users: UserModel[];
+  users: ReadonlyArray<UserModel>;
 }
 
 /* Example of fully typed class component */

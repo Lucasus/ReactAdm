@@ -6,7 +6,7 @@ import { requestUsersSucceeded } from "./appActions";
 
 export function fetchUsersFromServer() {
    return fetch("http://localhost:3004/users")
-     .then<UserModel[]>(response => response.json());
+     .then<ReadonlyArray<UserModel>>(response => response.json());
 }
 
 export function* fetchUsers() {

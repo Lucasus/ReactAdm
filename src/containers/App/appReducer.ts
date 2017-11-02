@@ -6,7 +6,7 @@ import {
   REQUEST_USERS_SUCCEEDED
 } from "./consts";
 
-export type State = UserModel[];
+export type State = ReadonlyArray<UserModel>;
 
 const initialState: State = [
   { id: 0, username: "sth", fullname: "sth sth" }
